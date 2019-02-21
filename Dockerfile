@@ -26,5 +26,5 @@ ENV ONECLICKURL="https://one-click.de/html" \
     TELEGRAMBOTKEY="bot4711" \
     CHATID=4711
 
-CMD ["python3", "oneclick.py"]
-#CMD ["crond", "-f"]
+#CMD ["python3", "oneclick.py"]
+CMD ["crond", "-f"]

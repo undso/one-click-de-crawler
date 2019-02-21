@@ -1,2 +1,2 @@
-* * * * * echo "Hello world" >> /dev/stdout 2>&1
+*/5 * * * * python3 /usr/local/oneclick.py
 # crontab requires an empty line at the end of the file
