@@ -55,10 +55,11 @@ if len(pdfs) > 0:
     for pdf in pdfs:
         print(pdf.text)
         output = output + pdf.text + "\n"
-        payload = {'chat_id': chatid, 'text': output}
-        result = urlencode(payload, quote_via=quote_plus)
-        r = requests.get("https://api.telegram.org/" + telegrambotkey + "/sendMessage?" + result)
-        pprint(r.json())
+
+    payload = {'chat_id': chatid, 'text': output}
+    result = urlencode(payload, quote_via=quote_plus)
+    r = requests.get("https://api.telegram.org/" + telegrambotkey + "/sendMessage?" + result)
+    pprint(r.json())
 else:
     print("Keine neuen PDF")
 
