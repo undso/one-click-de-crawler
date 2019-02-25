@@ -1,2 +1,2 @@
-*/5 * * * * python3 /usr/local/oneclick.py
+30 18 * * * python3 /usr/local/oneclick.py
 # crontab requires an empty line at the end of the file
